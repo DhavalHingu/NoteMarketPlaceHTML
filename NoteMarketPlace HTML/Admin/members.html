@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+	<title>Members</title>
+	<!--Google Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<!--Font Awesome-->
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+	<!--External CSS-->
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+	</head>
+<body class="dashboard downloads">
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#"><img src="images/Login/logo.png" alt=""></a>
+  <button class="navbar-toggler ChangeToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="ChangeToggle">
+ 
+    <span class="navbar-toggler-icon">
+    	  <i class="fa fa-bars" style="color:#6255a5; font-size:28px;"></i>
+    </span>
+	    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="dashboard.html">Dashboard</a>
+      </li>
+      <li class="nav-item">
+       <div class="dropdown">
+        <a class="nav-link" href="#" data-toggle="dropdown" id="note">Notes</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="note">
+        <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="notes-under-review.html" >Notes Under Review</a></li>
+        <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="published-notes.html">Published Notes</a></li>
+        <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="download-note.html">Downloaded Notes</a></li>
+        <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="rejected-notes.html">Rejected Notes</a></li>
+        
+
+
+     </ul>
+		  </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="members.html">Members</a>
+      </li>
+      <li class="nav-item">
+       <div class="dropdown">
+        <a class="nav-link" href="#" data-toggle="dropdown" id="note">Reports</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="note">
+        <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="spam-reports.html" >Spam Reports</a></li>
+        
+
+
+     </ul>
+		  </div>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+        <a class="nav-link" href="#" data-toggle="dropdown" id="setting">Settings</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="setting">
+        <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="manage-system-configuration.html" >Manage System Configuration</a></li>
+        <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="manage-administrative.html">Manage Administrative</a></li>
+        <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="manage-category.html">Manage Category</a></li>
+        <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="manage-type.html">Manage Type</a></li>
+	 <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="manage-country.html">Manage Countries</a></li>
+        
+
+
+     </ul>
+		  </div>
+
+      </li>
+      <li>
+      	<div class="dropdown">
+      <a href="#" id="imageDropdown" data-toggle="dropdown">
+        <img src="images/User-Profile/user-img.png">
+      </a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="imageDropdown">
+        <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="my-profile.html" >Update Profile</a></li>
+        <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="../change-password.html">Change Password</a></li>
+        
+ <li role="presentation" class="dropdown-item log"><a role="menuitem" tabindex="-1" href="#" class="dropdown-logout">Logout</a></li>
+
+     </ul>
+    </div>
+      </li>
+      <li class="nav-item">
+      	<a class="btn nav-btn" href="#"  role="button"><p>Logout</p></a>
+      </li>
+    </ul>
+      </div>
+</nav>
+<!--Navigation Bar Ends	-->
+	
+	<div class="container">
+		<div class="heading-first">
+	<div class="row">
+	<div class="col-md-6">
+		<h3>Members</h3>
+		</div>
+		
+			<div class="col-md-6 pull-right searching-div">
+			
+		<input type="text" class="search-box" placeholder="Search Notes">
+		<button class="btn search-btn">Search</button>
+		</div>
+		</div>
+			</div>
+	</div>
+	<div class="container">
+	<div class="table-responsive">
+		<table class="table" id="mytable">
+  <thead>
+    <tr>
+      <th scope="col" class="table-column-header">sr no.</th>
+      <th scope="col" class="table-column-header">first name</th>
+      <th scope="col" class="table-column-header">last name</th>
+      <th scope="col" class="table-column-header">email</th>
+      <th scope="col" class="table-column-header">joining date</th>
+           <th scope="col" class="table-column-header">under review notes</th>
+               <th scope="col" class="table-column-header">published noted</th>
+                   <th scope="col" class="table-column-header">downloaded notes</th> 
+                       <th scope="col" class="table-column-header">total expenses</th>
+                           <th scope="col" class="table-column-header">total earning</th>
+         <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-row">
+      <td>1</td>
+      <td>khyati</td>
+      <td>patel</td>
+      <td>khyatipatel@gmail.com</td>
+      <td>09-10-2020 10:10</td>
+      <td><a href="#" class="table-link">19</a></td>
+      <td><a href="#" class="table-link">10</a></td>
+      <td><a href="#" class="table-link">22</a></td>
+      <td><a href="#" class="table-link">$220</a></td>
+      <td><a href="#" class="table-link">$177</a></td>
+      <td class="">
+			
+     
+    <div class="table-dropdown-left">
+    
+  <button type="button" class="btn" data-toggle="dropdown"  aria-expanded="false">
+    <img src="images/images/dots.png" alt="">
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <!-- Dropdown menu links -->
+    <a href="#" class="dropdown-item">View more details</a>
+    <a href="#" class="dropdown-item">Deactivate</a>
+   
+  </div>
+</div>
+
+		</td>	
+    </tr>
+<tr class="table-row">
+      <td>2</td>
+      <td>Rahul</td>
+      <td>Shah</td>
+      <td>rahulshah@gmail.com</td>
+      <td>10-10-2020 11:25</td>
+      <td><a href="#" class="table-link">4</a></td>
+      <td><a href="#" class="table-link">5</a></td>
+      <td><a href="#" class="table-link">4</a></td>
+      <td><a href="#" class="table-link">$22</a></td>
+      <td><a href="#" class="table-link">$178</a></td>
+      <td class="">
+			
+     
+    <div class="table-dropdown-left">
+    
+  <button type="button" class="btn" data-toggle="dropdown"  aria-expanded="false">
+    <img src="images/images/dots.png" alt="">
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <!-- Dropdown menu links -->
+    <a href="#" class="dropdown-item">View more details</a>
+    <a href="#" class="dropdown-item">Deactivate</a>
+   
+  </div>
+</div>
+
+		</td>	
+    </tr>
+   <tr class="table-row">
+      <td>3</td>
+      <td>Suman</td>
+      <td>Trivedi</td>
+      <td>sumantrivedi@gmail.com</td>
+      <td>11-10-2020 01:00</td>
+      <td><a href="#" class="table-link">12</a></td>
+      <td><a href="#" class="table-link">11</a></td>
+      <td><a href="#" class="table-link">17</a></td>
+      <td><a href="#" class="table-link">$886</a></td>
+      <td><a href="#" class="table-link">$978</a></td>
+      <td class="">
+			
+     
+    <div class="table-dropdown-left">
+    
+  <button type="button" class="btn" data-toggle="dropdown"  aria-expanded="false">
+    <img src="images/images/dots.png" alt="">
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <!-- Dropdown menu links -->
+    <a href="#" class="dropdown-item">View more details</a>
+    <a href="#" class="dropdown-item">Deactivate</a>
+   
+  </div>
+</div>
+
+		</td>	
+    </tr>
+      <tr class="table-row">
+      <td>4</td>
+      <td>Raj</td>
+      <td>Malhotra</td>
+      <td>rajmalhotra@gmail.com</td>
+      <td>12-10-2020 10:10</td>
+      <td><a href="#" class="table-link">2</a></td>
+      <td><a href="#" class="table-link">123</a></td>
+      <td><a href="#" class="table-link">28</a></td>
+      <td><a href="#" class="table-link">$1284</a></td>
+      <td><a href="#" class="table-link">$15254</a></td>
+      <td class="">
+			
+     
+    <div class="table-dropdown-left">
+    
+  <button type="button" class="btn" data-toggle="dropdown"  aria-expanded="false">
+    <img src="images/images/dots.png" alt="">
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <!-- Dropdown menu links -->
+    <a href="#" class="dropdown-item">View more details</a>
+    <a href="#" class="dropdown-item">Deactivate</a>
+   
+  </div>
+</div>
+
+		</td>	
+    </tr>
+<tr class="table-row">
+      <td>5</td>
+      <td>Niya</td>
+      <td>Patel</td>
+      <td>niyapatel@gmail.com</td>
+      <td>13-10-2020 11:25</td>
+      <td><a href="#" class="table-link">20</a></td>
+      <td><a href="#" class="table-link">1</a></td>
+      <td><a href="#" class="table-link">0</a></td>
+      <td><a href="#" class="table-link">$0</a></td>
+      <td><a href="#" class="table-link">$69</a></td>
+      <td class="">
+			
+     
+    <div class="table-dropdown-left">
+    
+  <button type="button" class="btn" data-toggle="dropdown"  aria-expanded="false">
+    <img src="images/images/dots.png" alt="">
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <!-- Dropdown menu links -->
+    <a href="#" class="dropdown-item">View more details</a>
+    <a href="#" class="dropdown-item">Deactivate</a>
+   
+  </div>
+</div>
+
+		</td>	
+    </tr>
+
+   
+      
+            </tbody>
+</table>
+	<ul class="pagination text-center pull-right">
+    <li class="page-item active" aria-current="page"><a href="#" class="left"><img src="images/search/left-arrow.png" alt=""></a></li>
+    <li class="active"><a href="#" class="link">1</a></li>
+    <li><a href="#" class="link">2</a></li>
+    <li><a href="#" class="link">3</a></li>
+     <li><a href="#" class="link">4</a></li>
+      <li><a href="#" class="link">5</a></li>
+    <li><a href="#" class="right"><img src="images/search/right-arrow.png" alt=""></a></li>
+  </ul>
+		</div>
+	</div>
+		
+	<hr>
+		<footer class="admin-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<p>Version : 1.1.24</p>
+					</div>
+					<div class="col-md-6">
+						<div class="text-right">
+							<p>Copyright &copy; Tatvasoft All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+	
+	
+	<!--Jquery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--Bootstrap-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<!--Custom JS-->
+	<script src="js/script.js"></script>
+	</body>
+</html>
