@@ -1,0 +1,145 @@
+/*Large Devices */
+@media (min-width: 1200px) and (max-width:1299px) {}
+
+/* Medium Devices */
+@media(min-width:992px) and (max-width:1199px) {}
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+	.dashboard .heading-first .add-note {
+		position: relative;
+		left: -86px
+	}
+
+	.dashboard .heading-first h3 {
+		padding-top: 8px;
+	}
+
+	.dashboard .top-earning {
+		margin-bottom: 20px;
+		position: relative;
+		padding-left: 50px;
+	}
+
+	.dashboard .searching-div {
+		position: relative;
+		left: -0px;
+	}
+
+	.dashboard .searching-div input {
+		width: 60%;
+	}
+
+	.dashboard .heading h3 {
+		padding-top: 4px;
+	}
+
+	.dashboard .pagination {
+		position: relative;
+		left: 50px;
+	}
+
+	.contact-us textarea {
+		width: 320px;
+	}
+
+	.div-right {
+		padding-left: 188px;
+	}
+
+	.vl {}
+
+	/*	navbar*/
+	/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+	@media (max-width: 767px) {}
+
+	@media (max-width: 576px) {}
+
+	/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+	@media (max-width: 480px) {}
+
+	@media screen and (max-width: 425px) {
+		.earning-label {
+			margin-bottom: 60px;
+		}
+
+		.earning-details {
+			margin-bottom: 900px;
+		}
+
+		.dashboard-first {}
+
+		second-box {
+			margin-top: 140px;
+		}
+
+		.dashboard .searching-div input {
+			width: 60%;
+		}
+
+		.dashboard .searching-div .btn {}
+
+		.dashboard .searching-div {
+			padding-top: 10px;
+			position: relative;
+			left: 1px;
+		}
+
+		.pagination {
+			position: relative;
+			left: 100px
+		}
+
+		.add-notes .note-preview {
+			margin-bottom: 130px
+		}
+
+		.contact-us .textarea {
+			padding-left: 0;
+			margin-left: 0;
+			position: relative;
+			left: -15px;
+		}
+
+		.contact-us textarea {
+			width: 398px;
+		}
+
+		.admin-mob-custom-space {
+			margin-top: 10px;
+		}
+
+		@media screen and (max-width: 375px) {
+			.contact-us textarea {
+				width: 345px;
+			}
+
+			.search-page .text-overlay h3 {
+				color: red;
+			}
+		}
+
+		/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+		@media (max-width: 320px) {
+			.pagination {
+				position: relative;
+				width: 100%
+			}
+
+			.add-notes .submit-btn {
+				width: 40%;
+			}
+
+			.dashboard .search-btn {
+				width: 30%;
+			}
+
+			.contact-us textarea {
+				width: 295px;
+			}
+
+			.navbar-brand img {
+				position: relative;
+				left: -60px;
+			}
+		}

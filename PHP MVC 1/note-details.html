@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+	<title>Note Details</title>
+	<!--Google Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<!--Font Awesome-->
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+	<!--Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<style>
+	</style>
+</head>
+<body class="note-details-page dashboard">
+	<nav class="navbar navbar-expand-lg">
+		<a class="navbar-brand" href="#"><img src="images/Login/logo.png" alt=""></a>
+		<button class="navbar-toggler ChangeToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="ChangeToggle">
+			<span class="navbar-toggler-icon">
+				<i class="fa fa-bars" style="color:#6255a5; font-size:28px;"></i>
+			</span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="search.html">Search Notes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="dashboard.html">Sell Your Notes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="buyer-requests.html">Buyer Request</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="faq.html">FAQ</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact-us.html">Contact Us</a>
+				</li>
+				<li>
+					<div class="dropdown">
+						<a href="#" id="imageDropdown" data-toggle="dropdown">
+							<img src="images/User-Profile/user-img.png">
+						</a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="imageDropdown">
+							<li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="user-profile.html">My Profile</a></li>
+							<li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="my-downloads.html">My Downloads</a></li>
+							<li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="my-sold-notes.html">My Sold Notes</a></li>
+							<li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="my-rejected-notes.html">My Rejected Notes</a></li>
+							<li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="change-password.html">Change Password</a></li>
+							<li role="presentation" class="dropdown-item log"><a role="menuitem" tabindex="-1" href="#" class="dropdown-logout">Logout</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="btn nav-btn" href="#" role="button">
+						<p>Logout</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="heading-first">
+		<div class="container">
+			<h3>Search and Filter notes</h3>
+		</div>
+	</div>
+	<section class="note-details">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-12">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/search/computer-science.png" alt="">
+						</div>
+						<div class="col-md-8 padding-0">
+							<h3 class="book-name">Computer Science</h3>
+							<sub class="book-cat">Sciences</sub>
+							<p class="book-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam sequi magni mollitia nam commodi neque asperiores cumque. </p>
+							<button type="button" class="btn book-download-btn " data-toggle="modal" data-target="#exampleModalLong">Download/$15</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12 col-12">
+					<div class="row">
+						<div class="col-md-4"><label for="" class="static-label">Institution:</label></div>
+						<div class="col-md-8 text-right"><label for="" class="text-right dynamic-label">University of California</label></div>
+					</div>
+					<div class="row">
+						<div class="col-md-4"><label for="" class="static-label">Country:</label></div>
+						<div class="col-md-8 text-right"><label for="" class="text-right dynamic-label">Unites State</label></div>
+					</div>
+					<div class="row">
+						<div class="col-md-4"><label for="" class="static-label">Course:</label></div>
+						<div class="col-md-8 text-right"><label for="" class="text-right dynamic-label">Computer Engineering</label></div>
+					</div>
+					<div class="row">
+						<div class="col-md-7"><label for="" class="static-label">Course Code:</label></div>
+						<div class="col-md-5 text-right"><label for="" class="text-right dynamic-label">248705</label></div>
+					</div>
+					<div class="row">
+						<div class="col-md-4"><label for="" class="static-label">Professor:</label></div>
+						<div class="col-md-8 text-right"><label for="" class="text-right dynamic-label">Mr. Richard Brown</label></div>
+					</div>
+					<div class="row">
+						<div class="col-md-8"><label for="" class="static-label">Number of Pages:</label></div>
+						<div class="col-md-4 text-right"><label for="" class="text-right dynamic-label">27</label></div>
+					</div>
+					<div class="row">
+						<div class="col-md-6"><label for="" class="static-label">Approved Date:</label></div>
+						<div class="col-md-6 text-right"><label for="" class="text-right dynamic-label">November</label></div>
+					</div>
+					<div class="row">
+						<div class="col-md-6"><label for="" class="static-label">Rating</label></div>
+						<div class="col-md-6 text-right">
+							<label for="" class="text-right dynamic-label">100 Reviews</label>
+						</div>
+						<div class="rating">
+							<input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+							<input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+							<input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+							<input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+							<input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr class="hr-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-12">
+				<div class="heading">
+					<h3>Note Preview</h3>
+				</div>
+				<div id="Iframe-Cicis-Menu-To-Go" class="">
+					<div class="responsive-wrapper 
+     responsive-wrapper-padding-bottom-90pct" style="-webkit-overflow-scrolling: touch; overflow: auto;">
+						<iframe src="http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf">
+							<p style="font-size: 110%;"><em><strong>ERROR: </strong>
+									An &#105;frame should be displayed here but your browser version does not support &#105;frames.</em> Please update your browser to its most recent version and try again, or access the file <a href="http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf">with this link.</a></p>
+						</iframe>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-12 col-12 mb-5">
+				<div class="heading customer-review-heading">
+					<h3>Customer Reviews</h3>
+				</div>
+				<div class="customer-reviews">
+					<div class="review-content">
+						<img src="images/User-Profile/user-img.png" alt="">
+						<h3>Richard Brown</h3>
+						<div class="rating-">
+							<div class="rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+								<input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+								<input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+								<input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+								<input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fuga libero eos aliquid magnam vitae, autem qui eius</p>
+						</div>
+					</div>
+					<hr class="review-content-seprate">
+					<div class="review-content review-content-2">
+						<img src="images/User-Profile/user-img.png" alt="">
+						<h3>Richard Brown</h3>
+						<div class="rating-">
+							<div class="rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+								<input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+								<input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+								<input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+								<input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fuga libero eos aliquid magnam vitae, autem qui eius</p>
+						</div>
+					</div>
+					<hr class="review-content-seprate-2">
+					<div class="review-content review-content-3">
+						<img src="images/User-Profile/user-img.png" alt="">
+						<h3>Richard Brown</h3>
+						<div class="rating-">
+							<div class="rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+								<input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+								<input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+								<input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+								<input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br><br>
+	<footer>
+		<hr>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<p>Copyright &copy; Tatvasoft All rights reserved.</p>
+				</div>
+				<div class="col-md-6">
+					<div class="social-list text-right">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--	Thanks popup model-->
+	<!-- Modal -->
+	<div class="modal fade thanks-popup" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="heading">
+						<h3 class="text-center">Thank you for Purchasing !</h3>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; top: 2px; left: 6px;">
+						<span aria-hidden="true">
+							<image src="images/images/close.png"></image>
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="img"></div>
+					<h4>Dear Smith,</h4>
+					<p>As this is paid notes - you need topay seller Rahil shah offline. We will send him an email that you want to download this note. He may contact you furtherfor payment process completion.</p>
+					<p>In case you have urgency,<br>Please contact us on +9195377345959</p>
+					<p>Once he receives payment and acknowledge us- selected notes you can see over my downloads tab for download </p>
+					<p>Have a Good Day!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--Bootstrap-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<!--Custom JS-->
+	<script src="js/script.js"></script>
+</body>
+</html>
